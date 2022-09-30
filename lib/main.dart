@@ -1,3 +1,4 @@
+import 'package:esppr/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/customer_home.dart';
@@ -11,8 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: CustomerHomeScreen(),
-    );
+    return const MaterialApp(home: WelcomeScreen()
+        // CustomerHomeScreen(),
+        );
   }
 }

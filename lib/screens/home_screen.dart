@@ -1,7 +1,6 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/fake_search.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,65 +18,33 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0.0,
-          title: const CupertinoSearchTextField(),
+          title: const FakeSearch(),
           bottom: const TabBar(
               isScrollable: true,
               indicatorColor: Colors.yellowAccent,
               indicatorWeight: 7,
               tabs: [
-                RepeatedTab(
-                  label: 'Mens',
-                ),
-                RepeatedTab(
-                  label: 'Womens',
-                ),
-                RepeatedTab(
-                  label: 'Shoes',
-                ),
-                RepeatedTab(
-                  label: 'Bags',
-                ),
-                RepeatedTab(
-                  label: 'Electronics',
-                ),
-                RepeatedTab(
-                  label: 'Accessories',
-                ),
-                RepeatedTab(
-                  label: 'Home & Garden',
-                ),
+                RepeatedTab(label: 'Mens'),
+                RepeatedTab(label: 'Womens'),
+                RepeatedTab(label: 'Shoes'),
+                RepeatedTab(label: 'Bags'),
+                RepeatedTab(label: 'Electronics'),
+                RepeatedTab(label: 'Accessories'),
+                RepeatedTab(label: 'Home & Garden'),
                 RepeatedTab(label: 'Kids'),
                 RepeatedTab(label: 'Beauty'),
               ]),
         ),
         body: const TabBarView(children: [
-          Center(
-            child: Text("Mens"),
-          ),
-          Center(
-            child: Text("Women"),
-          ),
-          Center(
-            child: Text("Shoes"),
-          ),
-          Center(
-            child: Text("Bags"),
-          ),
-          Center(
-            child: Text("Electronics"),
-          ),
-          Center(
-            child: Text("Accessories"),
-          ),
-          Center(
-            child: Text("Home & Garden"),
-          ),
-          Center(
-            child: Text("Kids"),
-          ),
-          Center(
-            child: Text("Beauty"),
-          ),
+          Center(child: Text("Mens")),
+          Center(child: Text("Women")),
+          Center(child: Text("Shoes")),
+          Center(child: Text("Bags")),
+          Center(child: Text("Electronics")),
+          Center(child: Text("Accessories")),
+          Center(child: Text("Home & Garden")),
+          Center(child: Text("Kids")),
+          Center(child: Text("Beauty")),
         ]),
       ),
     );
