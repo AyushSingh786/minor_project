@@ -12,8 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: WelcomeScreen()
-        // CustomerHomeScreen(),
-        );
+    return const MaterialApp(
+      home: CustomerHomeScreen(),
+      // WelcomeScreen(),
+      // CustomerHomeScreen(),
+    );
   }
 }
